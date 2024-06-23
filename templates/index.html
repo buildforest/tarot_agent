@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Reading App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="landing-page">
+        <div class="overlay"></div>
+        <img src="{{ url_for('static', filename='img/landing_image.png') }}" alt="Tarot Reading" class="background-image">
+        <div class="content">
+            <form action="/get_reading" method="post">
+                <label for="question">What questions are on your mind?</label>
+                <input type="text" id="question" name="question" required>
+                <button type="submit">Get Reading</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

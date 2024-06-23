@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Metal Mania', cursive;
+    overflow: auto; 
+}
+.landing-page {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    margin-top: 450px;
+    margin-left: 1%;
+}
+
+.content form {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%; 
+    max-width: 800px; 
+}
+
+.content label {
+    font-size: 1.8em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.content input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+}
+
+.content button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Metal Mania', cursive;
+}
+
+.content button:hover {
+    background-color: #3700b3;
+}
+
+.reading-result, .reading-summary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+}
+
+.reading-result {
+    margin: 10px 130px; 
+
+}
+
+h1, h2, label, .btn {
+    font-family: 'Metal Mania', cursive;
+}
+
+.result-page {
+    position: relative;
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card {
+    text-align: center;
+    margin: 10px;
+    width: 200px; 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: #6200ea;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: #3700b3;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Metal Mania', cursive;
+}
+
+.btn:hover {
+    background-color: #3700b3;
+}

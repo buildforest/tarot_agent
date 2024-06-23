@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarot Reading Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="result-page">
+        <img src="{{ url_for('static', filename='img/result_background.png') }}" alt="Tarot Reading Result" class="background-image">
+        <div class="result-content">
+            <h1>Your Tarot Reading</h1>
+            <h3 class="reading-summary">{{ summary }}</h3>
+            <p class="reading-result">{{ reading }}</p>
+            <h2>Drawn Cards:</h2>
+            <div class="card-container">
+                {% for card in cards %}
+                    <div class="card">
+                        <h3>{{ card['name'] }}</h3>
+                        <img src="{{ url_for('static', filename='img/' + card['img_file'] ) }}" alt="{{ card['name'] }}">
+                        <p>{{ card['fortune_telling'][0] }}</p>
+                    </div>
+                {% endfor %}
+            </div>
+            <a href="/">
+                <button class="btn">Ask another question</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
